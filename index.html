@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/ueo1zap.css" />
+    </head>
+    <body>
+        <main>
+            <div class="Expense__Tracker__Wrapper">
+                <!-- heading  -->
+                <h1 class="Expense__Tracker__Heading">
+                    Expense Tracker
+                </h1>
+                <!-- Wrapper for the Expense status i.e Current balance , income , expenses  -->
+                <div class="Expense__Status">
+                    <!-- Current Balance Box -->
+                    <div class="Current__Balance__Wrapper">
+                        <p id="Your__Balance__text">Your Balance</p>
+                        <p id="Your__Balance__Amount">$<span id="Current__Balance">0.00</span></p>
+                    </div>
+                    <!-- Income and Expense Wrapper -->
+                    <div class="Income__Expenses__Wrapper">
+                        <!-- Income Box -->
+                        <div class="Income__Box">
+                            <p id="Income__Text">Income</p>
+                            <p>$<span id="Income__Amount">0.00</span></p>
+                        </div>
+                        <!-- Expenses Box -->
+                        <div class="Expenses_Box">
+                            <p id="Expense__Text">Expenses</p>
+                            <p>$<span id="Expense__Amount">0.00</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- transactions list and adding a transactions Wrapper-->
+
+                <div class="TransactionsList__AddingTransactions__Wrapper">
+                    <!-- Here is the Transactions List Wrapper -->
+                    <div class="Transactions__List__Wrapper">
+                        <div class="Transactions__and__DeleteButtonALL">
+                            <p>Transactions</p>
+                            <button class="Delete__Button__All">Delete ALL</button>
+                        </div>
+                        <ul class="Transaction__list">
+                            <!-- The list items will be added soon with the help of javaScript -->
+                        </ul>
+                    </div>
+
+                    <!-- Adding Transactions Wrapper -->
+                    <div class="Adding__Transactions__Wrapper">
+                        <p>Add Transactions</p>
+                        <!-- Wrapper for the Information about the Transaction -->
+                        <div class="Transactions__Information__Wrapper">
+                            <!-- Descriptions -->
+                            <p>Description</p>
+                            <input type="text" id="Description__Input" placeholder="Add a Description"/>
+                            <p>Amount</p>
+                            <input type="number" id="Amount__Input" placeholder="add Amount (i.e 100$)"/>
+                            <p id="Low__opacity">Use negative (-ve) for expenses (i.e -200)</p>
+                        </div>
+
+                        <!-- Add Transaction Button -->
+                        <div class="Add__Transaction__Box">
+                            <button id="Add__Transaction__Button">add transaction</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
