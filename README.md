@@ -6,7 +6,7 @@ A simple, responsive expense tracker to record income and expenses, compute bala
 
 [Deployed App](https://hanzlafullstack-expense-tracker.vercel.app/) • [GitHub Repo](https://github.com/hanzlafullstack/Expense-Tracker)
 
-![Preview](./preview/screenshot.png)
+![Preview](./preview/screenshot1.png)
 
 ## Overview
 
